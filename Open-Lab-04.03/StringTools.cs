@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Open_Lab_04._03
 {
@@ -6,7 +7,15 @@ namespace Open_Lab_04._03
     {
         public string RemoveFirstLast(string original)
         {
-            throw new NotImplementedException();
+            if (original.Length <= 1)
+            {
+                return original;
+            }
+            else
+            {
+                return original.Substring(1, original.Length - 2);
+            }
+
         }
     }
 }
